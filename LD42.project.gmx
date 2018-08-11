@@ -17,7 +17,6 @@
       <sprite>sprites\spr_collisionBlock</sprite>
       <sprite>sprites\spr_door</sprite>
     </sprites>
-      <sprite>sprites\spr_mask</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_robotHole</sprite>
       <sprite>sprites\spr_shipWindow</sprite>
@@ -26,6 +25,7 @@
       <sprite>sprites\spr_shipPedestal</sprite>
     </sprites>
     <sprites name="Decorations">
+      <sprite>sprites\spr_mask</sprite>
     </sprites>
     <sprites name="Environment">
       <sprite>sprites\spr_robotHole</sprite>
