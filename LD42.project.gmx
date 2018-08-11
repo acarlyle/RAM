@@ -18,21 +18,14 @@
       <sprite>sprites\spr_door</sprite>
     </sprites>
     <sprites name="Environment">
-      <sprite>sprites\spr_robotHole</sprite>
       <sprite>sprites\spr_shipWindow</sprite>
+      <sprite>sprites\spr_robotHole</sprite>
     </sprites>
     <sprites name="Objects">
       <sprite>sprites\spr_shipPedestal</sprite>
     </sprites>
     <sprites name="Decorations">
       <sprite>sprites\spr_mask</sprite>
-    </sprites>
-    <sprites name="Environment">
-      <sprite>sprites\spr_robotHole</sprite>
-      <sprite>sprites\spr_shipWindow</sprite>
-    </sprites>
-    <sprites name="Objects">
-      <sprite>sprites\spr_shipPedestal</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
