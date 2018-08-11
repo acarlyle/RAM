@@ -34,9 +34,9 @@ m_jumps = 0;
 m_canMove = true;
 
 //constant member variables
-m_grav = .7;
+m_grav = 1;
 m_jumpsMax = 1;
-m_jumpSpeed = 7;
+m_jumpSpeed = 10;
 m_moveSpeed = 4;
 
 //Gamemaker variables
