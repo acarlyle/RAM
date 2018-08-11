@@ -15,9 +15,13 @@
     </sprites>
     <sprites name="Collision">
       <sprite>sprites\spr_collisionBlock</sprite>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\LazyTileset</background>
+    <background>background\TileSet</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_initRoom.gml</script>
@@ -27,7 +31,7 @@
     <scripts name="Getters">
       <script>scripts\get_input.gml</script>
     </scripts>
-    <scripts name="Handless">
+    <scripts name="Handles">
       <script>scripts\handle_roomTransition.gml</script>
     </scripts>
     <scripts name="Helpers">
@@ -39,6 +43,7 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_door</object>
     <objects name="Controllers">
       <object>objects\obj_control</object>
       <object>objects\obj_menuControl</object>
@@ -49,16 +54,16 @@
     </objects>
     <objects name="Parents">
       <object>objects\par_collisionTile</object>
+      <object>objects\par_entrance</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>
-    <room>rooms\rm_ship_shrine</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_ship_shrine</room>
     <rooms name="Testing">
       <room>rooms\rm_testTrans</room>
     </rooms>
-    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
