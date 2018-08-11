@@ -13,10 +13,7 @@
       <sprite>sprites\spr_collisionBlock</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background">
-    <background>background\LazyTileset</background>
-    <background>background\TileSet</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_initRoom.gml</script>
