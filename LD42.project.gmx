@@ -21,6 +21,9 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_initRoom.gml</script>
+    <scripts name="Game Settings">
+      <script>scripts\scr_applyScreenRes.gml</script>
+    </scripts>
     <scripts name="Getters">
       <script>scripts\get_input.gml</script>
     </scripts>
