@@ -39,8 +39,6 @@ global.key_space = false; //jump, interact
 global.key_spaceHeld = false; //for longer jumping
 
 scr_applyScreenRes();
-
-room_goto(rm_ship_shrine);
 </string>
           </argument>
         </arguments>
