@@ -17,15 +17,17 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_initRoom.gml</script>
-    <scripts name="Player State">
-      <script>scripts\clear_playerStep.gml</script>
-      <script>scripts\player_idle.gml</script>
-    </scripts>
     <scripts name="Getters">
       <script>scripts\get_input.gml</script>
     </scripts>
     <scripts name="Helpers">
       <script>scripts\print.gml</script>
+    </scripts>
+    <scripts name="Player State">
+      <script>scripts\clear_playerStep.gml</script>
+      <script>scripts\player_falling.gml</script>
+      <script>scripts\player_idle.gml</script>
+      <script>scripts\player_jumping.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -36,6 +38,9 @@
     <object>objects\obj_player</object>
     <objects name="Environment">
       <object>objects\obj_block</object>
+    </objects>
+    <objects name="Parents">
+      <object>objects\par_collisionTile</object>
     </objects>
   </objects>
   <rooms name="rooms">
