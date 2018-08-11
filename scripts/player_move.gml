@@ -1,8 +1,7 @@
 ///player_move
 
 //check if you can move
-var move = global.key_left + global.key_right;
-if (global.key_left) move *= -1; // change directional speed to left
+var move = -global.key_left + global.key_right;
 
 //flip sprite to match direction
 if (move != 0) image_xscale = move;
@@ -28,7 +27,7 @@ if (m_vspd < 0) && (!global.key_spaceHeld) m_vspd = max(m_vspd, 0);
 
 var hspdFinal = m_hspd;
 
-if (move) print("hspdFinal: " + string(hspdFinal));
+//if (move) print("hspdFinal: " + string(hspdFinal));
 
 //Horizontal Collision
 if (place_meeting(x+hspdFinal, y, par_collisionTile))

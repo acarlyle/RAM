@@ -34,12 +34,10 @@ m_jumps = 0;
 m_canMove = true;
 
 //constant member variables
-m_grav = .3;
-m_vspdMax = 1;
-m_hspdMax = 1;
+m_grav = .7;
 m_jumpsMax = 1;
-m_jumpSpeed = 6;
-m_moveSpeed = 3;
+m_jumpSpeed = 7;
+m_moveSpeed = 4;
 </string>
           </argument>
         </arguments>
