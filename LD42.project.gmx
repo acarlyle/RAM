@@ -43,12 +43,14 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_door</object>
+    <objects name="Characters">
+      <object>objects\obj_player</object>
+    </objects>
     <objects name="Controllers">
       <object>objects\obj_control</object>
+      <object>objects\obj_door</object>
       <object>objects\obj_menuControl</object>
     </objects>
-    <object>objects\obj_player</object>
     <objects name="Environment">
       <object>objects\obj_block</object>
     </objects>
