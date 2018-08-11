@@ -16,9 +16,6 @@
     <sprites name="Collision">
       <sprite>sprites\spr_collisionBlock</sprite>
     </sprites>
-    <sprites name="Controllers">
-      <sprite>sprites\spr_door</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,9 +27,6 @@
     <scripts name="Getters">
       <script>scripts\get_input.gml</script>
     </scripts>
-    <scripts name="Handles">
-      <script>scripts\handle_roomTransition.gml</script>
-    </scripts>
     <scripts name="Helpers">
       <script>scripts\print.gml</script>
     </scripts>
@@ -42,26 +36,20 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <objects name="Characters">
-      <object>objects\obj_player</object>
-    </objects>
     <objects name="Controllers">
       <object>objects\obj_control</object>
-      <object>objects\obj_door</object>
       <object>objects\obj_menuControl</object>
     </objects>
+    <object>objects\obj_player</object>
     <objects name="Environment">
       <object>objects\obj_block</object>
     </objects>
     <objects name="Parents">
       <object>objects\par_collisionTile</object>
-      <object>objects\par_entrance</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>
-    <room>rooms\rm_testTrans</room>
-    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

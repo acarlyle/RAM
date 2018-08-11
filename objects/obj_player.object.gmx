@@ -3,7 +3,7 @@
   <spriteName>spr_robot</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -38,6 +38,9 @@ m_grav = .7;
 m_jumpsMax = 1;
 m_jumpSpeed = 7;
 m_moveSpeed = 4;
+
+//Gamemaker variables
+image_speed = 0
 </string>
           </argument>
         </arguments>
