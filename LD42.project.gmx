@@ -17,6 +17,9 @@
       <sprite>sprites\spr_collisionBlock</sprite>
       <sprite>sprites\spr_door</sprite>
     </sprites>
+    <sprites name="Decorations">
+      <sprite>sprites\spr_mask</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\LazyTileset</background>
