@@ -17,8 +17,15 @@
       <sprite>sprites\spr_collisionBlock</sprite>
       <sprite>sprites\spr_door</sprite>
     </sprites>
-    <sprites name="Decorations">
       <sprite>sprites\spr_mask</sprite>
+    <sprites name="Environment">
+      <sprite>sprites\spr_robotHole</sprite>
+      <sprite>sprites\spr_shipWindow</sprite>
+    </sprites>
+    <sprites name="Objects">
+      <sprite>sprites\spr_shipPedestal</sprite>
+    </sprites>
+    <sprites name="Decorations">
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -56,10 +63,19 @@
     </objects>
     <objects name="Environment">
       <object>objects\obj_block</object>
+      <object>objects\obj_robotHole</object>
+    </objects>
+    <objects name="Interactive">
+      <object>objects\obj_pedestal</object>
     </objects>
     <objects name="Parents">
       <object>objects\par_collisionTile</object>
       <object>objects\par_entrance</object>
+      <object>objects\par_object</object>
+      <object>objects\par_RAM</object>
+    </objects>
+    <objects name="RAM">
+      <object>objects\obj_certificate</object>
     </objects>
   </objects>
   <rooms name="rooms">
