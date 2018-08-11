@@ -1,36 +1,23 @@
 ///player_move
 
-//check if you can move
-var move = -global.key_left + global.key_right;
-
-//flip sprite to match direction
-if (move != 0) image_xscale = move;
-
+var move = -global.key_left + global.key_right; //check if you can move
+if (move != 0) image_xscale = move; //flips sprite to match move direction
 m_hspd = move * m_moveSpeed;
 if (m_vspd < 10) m_vspd += m_grav;
 
 //Jump -- If touching the ground, 
-if (place_meeting(x, y+1, par_collisionTile)){
-    m_jumps = m_jumpsMax;
-}
-else{
-    if (m_jumps == m_jumpsMax) m_jumps -=1; 
-}
+if (place_meeting(x, y+1, par_collisionTile)){ m_jumps = m_jumpsMax; }
+else{ if (m_jumps == m_jumpsMax) m_jumps -=1; }
 
 if (global.key_space) && (m_jumps > 0){
     m_jumps -= 1;
     m_vspd = -m_jumpSpeed;
     print("Jumped!");
-    //if (!audio_is_playing(snd_jump)) audio_play_sound(snd_jump, 10, false);
     audio_play_sound(snd_jump, 10, false);
 }
 
 if (m_vspd < 0) && (!global.key_spaceHeld) m_vspd = max(m_vspd, 0);
-//if (m_vspd < 0) && (!m_spaceBarHeld) m_vspd = max(m_vspd, -m_jumpSpeed/2);  //less frame perfect precision ... 
-
 var hspdFinal = m_hspd;
-
-//if (move) print("hspdFinal: " + string(hspdFinal));
 
 //Horizontal Collision
 if (place_meeting(x+hspdFinal, y, par_collisionTile))
@@ -56,3 +43,6 @@ if (place_meeting(x, y+m_vspd, par_collisionTile))
     m_vspd = 0;
 }
 y += m_vspd;
+
+//check for room transition
+if (!move && global.key_up && place_meeting(x, y, par_entrance)) handle_roomTransition();
