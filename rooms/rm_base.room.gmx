@@ -14,7 +14,7 @@
 
 var starting_xPos = 32;
 var starting_yPos = 0;
-var starting_state = player_falling;
+var starting_state = player_move;
 
 if (!instance_exists(obj_player)){
     print("creating obj_player");

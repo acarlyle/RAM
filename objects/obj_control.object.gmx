@@ -35,6 +35,7 @@ global.WINDOW_HEIGHT = 192;
 global.key_left = false; //move left
 global.key_right = false; //move right
 global.key_space = false; //jump, interact
+global.key_spaceHeld = false;
 </string>
           </argument>
         </arguments>

@@ -26,8 +26,8 @@
     <scripts name="Player State">
       <script>scripts\clear_playerStep.gml</script>
       <script>scripts\player_falling.gml</script>
-      <script>scripts\player_idle.gml</script>
       <script>scripts\player_jumping.gml</script>
+      <script>scripts\player_move.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

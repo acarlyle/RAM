@@ -25,12 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>m_state = player_idle;
+            <string>m_state = player_move;
 
+//variable member variables
 m_vspd = 0;
 m_hspd = 0;
+m_jumps = 0;
+m_canMove = true;
+
+//constant member variables
+m_grav = .2;
 m_vspdMax = 1;
 m_hspdMax = 1;
+m_jumpsMax = 1;
+m_jumpSpeed = 6;
+m_moveSpeed = 2;
 </string>
           </argument>
         </arguments>
