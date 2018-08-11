@@ -34,8 +34,9 @@ global.WINDOW_HEIGHT = 192;
 //controls
 global.key_left = false; //move left
 global.key_right = false; //move right
+global.key_up = false; //enter buildings
 global.key_space = false; //jump, interact
-global.key_spaceHeld = false;
+global.key_spaceHeld = false; //for longer jumping
 </string>
           </argument>
         </arguments>

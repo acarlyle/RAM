@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Sound Effects">
+      <sound>sound\snd_jump</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Characters">
       <sprite>sprites\spr_robot</sprite>
@@ -25,8 +29,6 @@
     </scripts>
     <scripts name="Player State">
       <script>scripts\clear_playerStep.gml</script>
-      <script>scripts\player_falling.gml</script>
-      <script>scripts\player_jumping.gml</script>
       <script>scripts\player_move.gml</script>
     </scripts>
   </scripts>

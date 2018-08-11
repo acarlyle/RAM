@@ -20,6 +20,9 @@ else{
 if (global.key_space) && (m_jumps > 0){
     m_jumps -= 1;
     m_vspd = -m_jumpSpeed;
+    print("Jumped!");
+    //if (!audio_is_playing(snd_jump)) audio_play_sound(snd_jump, 10, false);
+    audio_play_sound(snd_jump, 10, false);
 }
 
 if (m_vspd < 0) && (!global.key_spaceHeld) m_vspd = max(m_vspd, 0);
