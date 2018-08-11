@@ -22,8 +22,8 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\LazyTileset</background>
-    <background>background\TileSet</background>
+    <background>background\Tileset_Lazy</background>
+    <background>background\Tileset_Environment</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
