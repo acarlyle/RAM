@@ -2,9 +2,9 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,30 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//ini settings
+            <string>event_inherited();
 
-global.set_scaleRes = 4;
-global.WINDOW_WIDTH = 128;
-global.WINDOW_HEIGHT = 192;
+m_surface = undefined;
+m_xPos = 0;
+m_yPos = 0;
+m_xScale = 1;
+m_yScale = 1;
+m_rot = 0;
+m_color = c_white;
+m_alpha = .5;
 
-//controls
-global.key_left = false; //move left
-global.key_right = false; //move right
-global.key_up = false; //enter buildings
-global.key_space = false; //jump, interact
-global.key_spaceHeld = false; //for longer jumping
-
-//m_hud = undefined;
-
-scr_applyScreenRes();
-
-room_goto(rm_ship_shrine);
+print("created obj_hud");
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -65,7 +59,35 @@ room_goto(rm_ship_shrine);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if (!m_hud) m_hud = instance_create(0,0,obj_hud);
+            <string>if (surface_exists(m_surface)){
+    instance_destroy(m_surface);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (m_surface &amp;&amp; surface_exists(m_surface)){
+    //draw_surface_ext(m_surface, 32, 32, m_xScale, m_yScale, m_rot, m_color, m_alpha);
+}
+//else { m_surface = create_hud(m_surface); }
 </string>
           </argument>
         </arguments>
