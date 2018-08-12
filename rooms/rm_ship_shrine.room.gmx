@@ -64,12 +64,10 @@ obj_player.y = starting_yPos;</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_block" x="64" y="352" name="inst_509DB0E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="96" y="352" name="inst_30E49479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="128" y="352" name="inst_42097735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="160" y="352" name="inst_FB1F2844" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="32" y="352" name="inst_5CD202D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="0" y="352" name="inst_67EC0E73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pedestal" x="32" y="320" name="inst_03E3955D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pedestal" x="96" y="320" name="inst_72D10D73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="192" y="352" name="inst_B137BEE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,78 +93,94 @@ obj_player.y = starting_yPos;</code>
     <instance objName="obj_shipWindow" x="64" y="256" name="inst_14CE132D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shipWindow" x="192" y="256" name="inst_5696570F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shipWindow" x="320" y="256" name="inst_EC3B0954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="0" y="352" name="inst_3776BC97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="64" y="352" name="inst_578CB061" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="TileSet_Spaceship" x="0" y="320" w="32" h="32" xo="0" yo="32" id="10000002" name="inst_6A7D100C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="32" y="320" w="32" h="32" xo="0" yo="32" id="10000003" name="inst_08A16147" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="0" y="288" w="32" h="32" xo="0" yo="32" id="10000005" name="inst_7E330554" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="32" y="288" w="32" h="32" xo="0" yo="32" id="10000006" name="inst_EC0742C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="96" y="320" w="32" h="32" xo="0" yo="32" id="10000007" name="inst_D9C22FEF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="64" y="288" w="32" h="32" xo="0" yo="32" id="10000008" name="inst_6B5DFFF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="64" y="320" w="32" h="32" xo="32" yo="32" id="10000010" name="inst_9393677D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="128" y="320" w="32" h="32" xo="0" yo="32" id="10000011" name="inst_603AEBB4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="160" y="288" w="32" h="32" xo="0" yo="32" id="10000013" name="inst_1A8F7FFD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="160" y="320" w="32" h="32" xo="0" yo="32" id="10000014" name="inst_C5CF2D21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="192" y="288" w="32" h="32" xo="0" yo="32" id="10000015" name="inst_EE1E6C68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="192" y="320" w="32" h="32" xo="32" yo="32" id="10000016" name="inst_703CDDB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="224" y="288" w="32" h="32" xo="0" yo="32" id="10000017" name="inst_DBCBAA08" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="224" y="320" w="32" h="32" xo="0" yo="32" id="10000018" name="inst_C94B5739" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="256" y="288" w="32" h="32" xo="0" yo="32" id="10000019" name="inst_6AB3E2B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="256" y="320" w="32" h="32" xo="0" yo="32" id="10000020" name="inst_DDEFD249" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="288" y="288" w="32" h="32" xo="0" yo="32" id="10000021" name="inst_2BA2F02A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="288" y="320" w="32" h="32" xo="32" yo="32" id="10000022" name="inst_280B8096" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="320" y="288" w="32" h="32" xo="0" yo="32" id="10000023" name="inst_D6F1E8BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="320" y="320" w="32" h="32" xo="0" yo="32" id="10000024" name="inst_F554FB90" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="352" y="288" w="32" h="32" xo="0" yo="32" id="10000025" name="inst_D9EBBD38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="352" y="320" w="32" h="32" xo="0" yo="32" id="10000026" name="inst_1B7EA90D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="416" y="320" w="32" h="32" xo="32" yo="32" id="10000028" name="inst_0C8D20F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="384" y="320" w="32" h="32" xo="0" yo="32" id="10000030" name="inst_B97CF5E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="64" y="256" w="32" h="32" xo="0" yo="32" id="10000036" name="inst_8976680F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="32" y="256" w="32" h="32" xo="0" yo="32" id="10000038" name="inst_121EE54D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="0" y="256" w="32" h="32" xo="0" yo="32" id="10000039" name="inst_F2E671A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="160" y="256" w="32" h="32" xo="0" yo="32" id="10000041" name="inst_B2054C87" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="192" y="256" w="32" h="32" xo="0" yo="32" id="10000042" name="inst_685535DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="224" y="256" w="32" h="32" xo="0" yo="32" id="10000043" name="inst_300FC9C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="256" y="256" w="32" h="32" xo="0" yo="32" id="10000044" name="inst_9D5A1248" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="288" y="256" w="32" h="32" xo="0" yo="32" id="10000045" name="inst_6CBC132F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="320" y="256" w="32" h="32" xo="0" yo="32" id="10000046" name="inst_D95100E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="352" y="256" w="32" h="32" xo="0" yo="32" id="10000047" name="inst_E39C6F84" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="352" y="224" w="32" h="32" xo="0" yo="32" id="10000052" name="inst_CEC780AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="320" y="224" w="32" h="32" xo="0" yo="32" id="10000053" name="inst_7963EA8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="288" y="224" w="32" h="32" xo="0" yo="32" id="10000054" name="inst_D2204506" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="224" y="224" w="32" h="32" xo="0" yo="32" id="10000056" name="inst_28DBA26D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="192" y="224" w="32" h="32" xo="0" yo="32" id="10000057" name="inst_E4D8EC1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="160" y="224" w="32" h="32" xo="0" yo="32" id="10000058" name="inst_CA09F901" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="96" y="224" w="32" h="32" xo="0" yo="32" id="10000060" name="inst_0F90F925" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="32" y="224" w="32" h="32" xo="0" yo="32" id="10000062" name="inst_C50DEDAA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="0" y="224" w="32" h="32" xo="0" yo="32" id="10000063" name="inst_E83805BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="128" y="256" w="32" h="32" xo="0" yo="32" id="10000067" name="inst_13058832" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="128" y="224" w="32" h="32" xo="64" yo="32" id="10000069" name="inst_C4C3E51A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="64" y="224" w="32" h="32" xo="0" yo="32" id="10000070" name="inst_F7D1666B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="256" y="224" w="32" h="32" xo="64" yo="32" id="10000071" name="inst_1E4EF970" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="96" y="288" w="32" h="32" xo="0" yo="32" id="10000109" name="inst_D10B7A06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="96" y="256" w="32" h="32" xo="0" yo="32" id="10000110" name="inst_9704735A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="128" y="288" w="32" h="32" xo="0" yo="32" id="10000111" name="inst_25145089" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_Spaceship" x="384" y="288" w="32" h="32" xo="224" yo="32" id="10000112" name="inst_B4296777" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="416" y="288" w="32" h="32" xo="0" yo="32" id="10000114" name="inst_8445B86E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="384" y="256" w="32" h="32" xo="0" yo="32" id="10000117" name="inst_18660DEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_Spaceship" x="384" y="224" w="32" h="32" xo="128" yo="32" id="10000120" name="inst_C1EC9FF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_Spaceship" x="416" y="256" w="32" h="32" xo="128" yo="32" id="10000121" name="inst_7C9CD166" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_Spaceship" x="416" y="224" w="32" h="32" xo="128" yo="32" id="10000122" name="inst_0191E4DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="96" y="352" w="32" h="32" xo="32" yo="0" id="10000095" name="inst_E87DA8F2" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="128" y="352" w="32" h="32" xo="32" yo="0" id="10000096" name="inst_04138614" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="64" y="352" w="32" h="32" xo="32" yo="0" id="10000097" name="inst_ED9A58F2" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="32" y="352" w="32" h="32" xo="32" yo="0" id="10000098" name="inst_C7B23880" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="0" y="352" w="32" h="32" xo="32" yo="0" id="10000099" name="inst_B93E509A" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="160" y="352" w="32" h="32" xo="32" yo="0" id="10000100" name="inst_8A7E8A49" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="192" y="352" w="32" h="32" xo="32" yo="0" id="10000101" name="inst_A9E3A2FA" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="224" y="352" w="32" h="32" xo="32" yo="0" id="10000102" name="inst_AAB3F0E8" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="256" y="352" w="32" h="32" xo="32" yo="0" id="10000103" name="inst_22A3B7AE" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="288" y="352" w="32" h="32" xo="32" yo="0" id="10000104" name="inst_CD772F82" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="320" y="352" w="32" h="32" xo="32" yo="0" id="10000105" name="inst_8F01A011" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="352" y="352" w="32" h="32" xo="32" yo="0" id="10000106" name="inst_3E46B4EC" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="384" y="352" w="32" h="32" xo="32" yo="0" id="10000107" name="inst_CAD9C334" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_Spaceship" x="416" y="352" w="32" h="32" xo="32" yo="0" id="10000108" name="inst_A0650735" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="224" w="32" h="32" xo="96" yo="32" id="10000123" name="inst_127BD37D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="256" w="32" h="32" xo="96" yo="32" id="10000124" name="inst_1D4A0595" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="288" w="32" h="32" xo="96" yo="32" id="10000125" name="inst_0ACC7621" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="320" w="32" h="32" xo="96" yo="32" id="10000126" name="inst_3F46F65F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="320" w="32" h="32" xo="96" yo="32" id="10000127" name="inst_C9632BFA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="288" w="32" h="32" xo="96" yo="32" id="10000128" name="inst_4E3BC55E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="256" w="32" h="32" xo="96" yo="32" id="10000129" name="inst_71DA7B06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="224" w="32" h="32" xo="96" yo="32" id="10000130" name="inst_6F066F15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="320" w="32" h="32" xo="96" yo="32" id="10000131" name="inst_8D898360" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="288" w="32" h="32" xo="96" yo="32" id="10000132" name="inst_87EF3E70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="256" w="32" h="32" xo="96" yo="32" id="10000133" name="inst_611E8D20" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="224" w="32" h="32" xo="96" yo="32" id="10000134" name="inst_B3840DD6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="320" w="32" h="32" xo="96" yo="32" id="10000135" name="inst_0E0B6B32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="288" w="32" h="32" xo="96" yo="32" id="10000136" name="inst_DDCAA4EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="256" w="32" h="32" xo="96" yo="32" id="10000137" name="inst_8C73AC8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="224" w="32" h="32" xo="96" yo="32" id="10000138" name="inst_19D03F9A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="224" w="32" h="32" xo="96" yo="32" id="10000139" name="inst_19AA2BD4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="320" w="32" h="32" xo="96" yo="32" id="10000140" name="inst_EB8AB11D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="288" w="32" h="32" xo="96" yo="32" id="10000141" name="inst_3F1B9958" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="256" w="32" h="32" xo="96" yo="32" id="10000142" name="inst_2C92605A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="320" w="32" h="32" xo="96" yo="32" id="10000143" name="inst_C91C48CF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="288" w="32" h="32" xo="96" yo="32" id="10000144" name="inst_A075144D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="256" w="32" h="32" xo="96" yo="32" id="10000145" name="inst_14C5CD1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="224" w="32" h="32" xo="96" yo="32" id="10000147" name="inst_CD22AD0C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="224" w="32" h="32" xo="96" yo="32" id="10000148" name="inst_64146415" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="256" w="32" h="32" xo="96" yo="32" id="10000149" name="inst_004DA155" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="288" w="32" h="32" xo="96" yo="32" id="10000150" name="inst_69AC29EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="320" w="32" h="32" xo="32" yo="32" id="10000152" name="inst_69ADBB96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="224" w="32" h="32" xo="96" yo="32" id="10000153" name="inst_02410992" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="256" w="32" h="32" xo="96" yo="32" id="10000154" name="inst_28CC9257" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="288" w="32" h="32" xo="96" yo="32" id="10000156" name="inst_6445FABA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="320" w="32" h="32" xo="96" yo="32" id="10000157" name="inst_56E3B511" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="320" w="32" h="32" xo="96" yo="32" id="10000158" name="inst_E41D4B29" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="288" w="32" h="32" xo="96" yo="32" id="10000159" name="inst_DCE23E2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="256" w="32" h="32" xo="96" yo="32" id="10000160" name="inst_E2E9EC15" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="224" w="32" h="32" xo="96" yo="32" id="10000161" name="inst_D24677AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="224" w="32" h="32" xo="96" yo="32" id="10000162" name="inst_D0FA66C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="256" w="32" h="32" xo="96" yo="32" id="10000163" name="inst_AF2B879E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="288" w="32" h="32" xo="96" yo="32" id="10000164" name="inst_457709F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="320" w="32" h="32" xo="96" yo="32" id="10000165" name="inst_83DC5361" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="320" w="32" h="32" xo="96" yo="32" id="10000166" name="inst_A489CAD4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="288" w="32" h="32" xo="96" yo="32" id="10000167" name="inst_1EA7D5DA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="256" w="32" h="32" xo="96" yo="32" id="10000168" name="inst_11FE10F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="224" w="32" h="32" xo="96" yo="32" id="10000169" name="inst_B642B9F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="224" w="32" h="32" xo="96" yo="32" id="10000170" name="inst_A198802B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="256" w="32" h="32" xo="96" yo="32" id="10000171" name="inst_99D3906E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="288" w="32" h="32" xo="96" yo="32" id="10000172" name="inst_4D238B47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="320" w="32" h="32" xo="96" yo="32" id="10000173" name="inst_976DB343" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="384" y="320" w="32" h="32" xo="96" yo="32" id="10000174" name="inst_B1864D5E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="384" y="256" w="32" h="32" xo="96" yo="32" id="10000175" name="inst_392C5279" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="416" y="288" w="32" h="32" xo="96" yo="32" id="10000176" name="inst_AACCF858" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="416" y="320" w="32" h="32" xo="96" yo="32" id="10000177" name="inst_596C86F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="352" w="32" h="32" xo="96" yo="0" id="10000197" name="inst_1DD6A83D" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="352" w="32" h="32" xo="96" yo="0" id="10000198" name="inst_B1F5C782" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="352" w="32" h="32" xo="96" yo="0" id="10000199" name="inst_92546914" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="352" w="32" h="32" xo="96" yo="0" id="10000200" name="inst_9F48AEB8" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="352" w="32" h="32" xo="96" yo="0" id="10000201" name="inst_7B95E7FD" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="352" w="32" h="32" xo="96" yo="0" id="10000202" name="inst_FD86DF9F" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="352" w="32" h="32" xo="96" yo="0" id="10000203" name="inst_0AF0C50A" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="352" w="32" h="32" xo="96" yo="0" id="10000204" name="inst_18011129" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="352" w="32" h="32" xo="96" yo="0" id="10000205" name="inst_7DDE2ADF" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="352" w="32" h="32" xo="96" yo="0" id="10000206" name="inst_13B23F09" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="352" w="32" h="32" xo="96" yo="0" id="10000207" name="inst_20BD53BE" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="352" w="32" h="32" xo="96" yo="0" id="10000208" name="inst_17DD49DB" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="384" y="352" w="32" h="32" xo="96" yo="0" id="10000209" name="inst_72234555" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="416" y="352" w="32" h="32" xo="96" yo="0" id="10000210" name="inst_21C68770" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="0" y="192" w="32" h="32" xo="128" yo="0" id="10000225" name="inst_E26AA27C" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="32" y="192" w="32" h="32" xo="128" yo="0" id="10000226" name="inst_DDBC8B53" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="64" y="192" w="32" h="32" xo="128" yo="0" id="10000227" name="inst_820F494A" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="96" y="192" w="32" h="32" xo="128" yo="0" id="10000228" name="inst_099DEAAE" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="128" y="192" w="32" h="32" xo="128" yo="0" id="10000229" name="inst_FB63D663" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="160" y="192" w="32" h="32" xo="128" yo="0" id="10000230" name="inst_F7B2E697" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="192" y="192" w="32" h="32" xo="128" yo="0" id="10000231" name="inst_AF0DCCF6" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="224" y="192" w="32" h="32" xo="128" yo="0" id="10000232" name="inst_9E900EBC" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="256" y="192" w="32" h="32" xo="128" yo="0" id="10000233" name="inst_8FA35C0F" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="288" y="192" w="32" h="32" xo="128" yo="0" id="10000234" name="inst_960CB1F3" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="320" y="192" w="32" h="32" xo="128" yo="0" id="10000235" name="inst_61D1E250" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="352" y="192" w="32" h="32" xo="128" yo="0" id="10000236" name="inst_319D0D03" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="384" y="192" w="32" h="32" xo="128" yo="0" id="10000237" name="inst_8C586F44" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_Spaceship" x="416" y="192" w="32" h="32" xo="128" yo="0" id="10000238" name="inst_2FDD02D3" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
