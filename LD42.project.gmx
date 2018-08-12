@@ -8,6 +8,7 @@
     <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_bird</sprite>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_certificate</sprite>
     <sprite>sprites\spr_collisionBlock</sprite>
@@ -39,6 +40,7 @@
     <script>scripts\scr_initRoom.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_bird</object>
     <object>objects\obj_block</object>
     <object>objects\obj_button</object>
     <object>objects\obj_certificate</object>
@@ -61,6 +63,7 @@
     <room>rooms\rm_base</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_ship_shrine</room>
+    <room>rooms\rm_skyfall</room>
     <room>rooms\rm_testTrans</room>
   </rooms>
   <help>
