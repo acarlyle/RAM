@@ -8,9 +8,12 @@
     <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_certificate</sprite>
     <sprite>sprites\spr_collisionBlock</sprite>
     <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_mask</sprite>
+    <sprite>sprites\spr_maskActive</sprite>
     <sprite>sprites\spr_robot</sprite>
     <sprite>sprites\spr_robotHole</sprite>
     <sprite>sprites\spr_shipPedestal</sprite>
@@ -25,24 +28,29 @@
     <script>scripts\clear_playerStep.gml</script>
     <script>scripts\get_input.gml</script>
     <script>scripts\handle_roomTransition.gml</script>
+    <script>scripts\handle_checkForInteraction.gml</script>
     <script>scripts\player_move.gml</script>
     <script>scripts\print.gml</script>
     <script>scripts\scr_applyScreenRes.gml</script>
     <script>scripts\scr_initRoom.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
-    <object>objects\obj_control</object>
-    <object>objects\obj_menuControl</object>
-    <object>objects\obj_robotHole</object>
-    <object>objects\obj_door</object>
-    <object>objects\par_collisionTile</object>
-    <object>objects\par_RAM</object>
-    <object>objects\par_object</object>
-    <object>objects\obj_certificate</object>
-    <object>objects\par_entrance</object>
-    <object>objects\obj_pedestal</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_button</object>
+    <object>objects\obj_certificate</object>
+    <object>objects\obj_control</object>
+    <object>objects\obj_door</object>
+    <object>objects\obj_mask</object>
+    <object>objects\obj_menuControl</object>
+    <object>objects\par_collisionTile</object>
+    <object>objects\par_entrance</object>
+    <object>objects\par_interactable</object>
+    <object>objects\par_object</object>
+    <object>objects\par_RAM</object>
+    <object>objects\obj_pedestal</object>
+    <object>objects\obj_player</object>
+    <object>objects\obj_robotHole</object>
+    <object>objects\obj_shipWindow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>

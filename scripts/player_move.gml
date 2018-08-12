@@ -46,3 +46,5 @@ y += m_vspd;
 
 //check for room transition
 if (!move && global.key_up && place_meeting(x, y, par_entrance)) handle_roomTransition();
+//check for item interaction
+if (!move && global.key_z && !global.key_space) handle_checkForInteraction(); 
