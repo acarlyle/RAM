@@ -24,6 +24,7 @@
     <background>background\Tileset_Environment</background>
     <background>background\Tileset_Lazy</background>
     <background>background\TileSet_Spaceship</background>
+    <background>background\TileSet_spaceShrine</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
