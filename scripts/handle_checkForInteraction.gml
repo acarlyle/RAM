@@ -6,15 +6,15 @@ var interactableItem = instance_place(x, y, par_interactable);
 if (interactableItem){
     switch(interactableItem.object_index){
         case obj_pedestal:
-            if(interactableItem.m_isActive){ //deactivate mask
+            if(interactableItem.m_isActive){ //deactivate 
+                        case obj_certificate:mask96, obj_mask);
+                    switch (obj.object_index){
                 var obj = instance_place(x, y-32, par_RAM);
                 if (obj.m_objectFound){
                     interactableItem.m_isActive = false;
                     interactableItem.image_speed = 0;
                     //deactivate mask
-                    var mask = instance_place(x, y-96, obj_mask);
-                    switch (obj.object_index){
-                        case obj_certificate:
+                    var mask = instance_place(x, y-
                             obj_player.m_hasCertificate = false;
                             scr_removeRAM(obj_certificate);
                             break;

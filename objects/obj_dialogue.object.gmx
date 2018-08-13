@@ -30,38 +30,28 @@
 m_enableDialogue = false;
 m_forceDialogue = false;
 
-m_text = "hello hello hello";
-m_width = 500;
-m_delay = 5;  //How many frames to "wait" when typewriting
-m_amount = 1; //Draw zero characters at first
+//m_text = "hello hello hello";
+//m_width = 500;
+//m_delay = 5;  //How many frames to "wait" when typewriting
+//m_amount = 1; //Draw zero characters at first
 
-draw_set_font(font0);
+padding = 16;
+maxlength = 112;
+text = "hello hello hello";
+spd = 1;
+font = font_add("pcsenior.ttf", 12, true, false, 32, 128);
 
-alarm[0] = m_delay;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>m_amount+=1; // Show 1 more character
-alarm[0] = m_delay; // Reset the alarm
+draw_set_font(font);
+
+alpha = 0;
+printedStr = "";
+time = 0;
+
+text_length = string_length(text);
+font_size = font_get_size(font);
+
+text_width = string_width_ext(text, font_size + (font_size/2), maxlength);
+text_height = string_height_ext(text, font_size+(font_size/2), maxlength);
 </string>
           </argument>
         </arguments>
@@ -85,6 +75,8 @@ alarm[0] = m_delay; // Reset the alarm
           <argument>
             <kind>1</kind>
             <string>//print("dialogue enabled: " + string(m_enableDialogue));
+
+//print("printedStr: " + string(printedStr));
 </string>
           </argument>
         </arguments>
@@ -133,16 +125,19 @@ alarm[0] = m_delay; // Reset the alarm
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (m_enableDialogue) {
+            <string>///add letters over time
+
+if (m_enableDialogue) {
     //draw_sprite(spr_textBox, 0, 8, 64);
-    draw_wrapped_colored_text(8, 64, m_text, m_width, m_amount);
+    if (time &lt; text_length){
+        time += spd;
+        printedStr = string_copy(text, 0, time);      
+    }
 }
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -159,7 +154,32 @@ alarm[0] = m_delay; // Reset the alarm
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_wrapped_colored_text(obj_player.x, obj_player.y, m_text, m_width, m_amount);
+            <string>///render text
+
+draw_sprite_ext(spr_textBox, 0, 8, 64, 4, 4, 1, c_white, 1);
+
+if (m_enableDialogue) {
+    draw_set_alpha(alpha);
+    if (alpha &lt; 1) alpha += spd/10;
+    else alpha = 1;
+
+    draw_set_font(font);
+    draw_set_color(c_white);
+
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_top);
+    
+    draw_text_ext
+    (
+        8 + padding,
+        64 + padding,
+        printedStr,
+        font_size + (font_size/2),
+        maxlength       
+    );
+    
+    draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>
