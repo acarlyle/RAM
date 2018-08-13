@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>pcsenior.ttf</name>
+      <exists>-1</exists>
+      <size>19028</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>pcsenior.ttf</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_jump</sound>
@@ -29,6 +48,9 @@
     <sprite>sprites\spr_flinger</sprite>
     <sprite>sprites\spr_robo_boy</sprite>
     <sprite>sprites\spr_robo_vaultman</sprite>
+    <sprite>sprites\spr_autoEntrance</sprite>
+    <sprite>sprites\spr_textBox</sprite>
+    <sprite>sprites\spr_dialogue</sprite>
     <sprite>sprites\spr_roboAntenna</sprite>
     <sprite>sprites\spr_roboMother</sprite>
     <sprite>sprites\spr_cheezeWiz</sprite>
@@ -60,13 +82,19 @@
     <script>scripts\scr_addRAM.gml</script>
     <script>scripts\scr_removeRAM.gml</script>
     <script>scripts\scr_updateRAM.gml</script>
+    <script>scripts\draw_wrapped_colored_text.gml</script>
+    <script>scripts\scr_text.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_binConverter</object>
     <object>objects\obj_bird</object>
     <object>objects\obj_block</object>
     <object>objects\obj_button</object>
     <object>objects\obj_cap</object>
+    <object>objects\obj_flinger</object>
     <object>objects\obj_certificate</object>
     <object>objects\obj_control</object>
     <object>objects\obj_door</object>
@@ -81,9 +109,11 @@
     <object>objects\obj_shipWindow</object>
     <object>objects\par_collisionTile</object>
     <object>objects\par_entrance</object>
+    <object>objects\obj_autoEntrance</object>
     <object>objects\par_interactable</object>
     <object>objects\par_object</object>
     <object>objects\par_RAM</object>
+    <object>objects\obj_dialogue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>

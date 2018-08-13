@@ -6,7 +6,7 @@ var interactableItem = instance_place(x, y, par_interactable);
 if (interactableItem){
     switch(interactableItem.object_index){
         case obj_pedestal:
-            if(interactableItem.m_isActive){
+            if(interactableItem.m_isActive){ //deactivate mask
                 var obj = instance_place(x, y-32, par_RAM);
                 if (obj.m_objectFound){
                     interactableItem.m_isActive = false;
@@ -27,7 +27,7 @@ if (interactableItem){
                     mask.sprite_index = spr_mask;   
                 }
             }
-            else{
+            else{ //activate mask
                 var obj = instance_place(x, y-32, par_RAM);
                 if (obj && obj.m_objectFound){
                     interactableItem.m_isActive = true;
@@ -54,5 +54,7 @@ if (interactableItem){
         case obj_button:
             obj_button.image_index++;
             break;
+        case obj_dialogue:
+            m_enableDialogue = true;
     }
 }
