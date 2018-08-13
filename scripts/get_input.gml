@@ -6,3 +6,4 @@ global.key_up = keyboard_check(vk_up); //enter doorways
 global.key_space = keyboard_check_pressed(vk_space); //jump
 global.key_z = keyboard_check_released(ord('Z')); //interact
 global.key_spaceHeld = keyboard_check(vk_space);
+global.key_r = keyboard_check_released(ord('R')); //self-Destruct

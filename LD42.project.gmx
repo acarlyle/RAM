@@ -35,6 +35,7 @@
     <sprite>sprites\spr_roboGenericMan</sprite>
     <sprite>sprites\spr_roboGenericFemale</sprite>
     <sprite>sprites\spr_gasStation</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset_Environment</background>

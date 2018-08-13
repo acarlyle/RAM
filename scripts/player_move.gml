@@ -1,5 +1,12 @@
 ///player_move
 
+//check for Self-Destructd
+if(global.key_r) {
+    print("Self proclaimed destruct")
+    //draw_sprite (spr_explosion, 0, obj_player.x, obj_player.y)
+}
+
+
 var move = -global.key_left + global.key_right; //check if you can move
 if (move != 0) image_xscale = move; //flips sprite to match move direction
 m_hspd = move * m_moveSpeed;
