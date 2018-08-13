@@ -22,7 +22,6 @@
     <sprite>sprites\spr_shipWindow</sprite>
     <sprite>sprites\spr_RAMBlockEmpty</sprite>
     <sprite>sprites\spr_RAMBlockFull</sprite>
-    <sprite>sprites\spr_RAMBlock</sprite>
     <sprite>sprites\spr_redHat</sprite>
     <sprite>sprites\spr_wheelGrease</sprite>
     <sprite>sprites\spr_ramStick</sprite>
