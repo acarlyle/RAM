@@ -10,9 +10,9 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>scr_initRoom();
+  <code>//scr_initRoom();
 
-var starting_xPos = 32;
+/*var starting_xPos = 32;
 var starting_yPos = 0;
 var starting_state = player_move;
 
@@ -20,7 +20,7 @@ if (!instance_exists(obj_player)){
     print("creating obj_player");
     instance_create(starting_xPos, starting_yPos, obj_player);
     obj_player.m_state = starting_state;
-}</code>
+}*/</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

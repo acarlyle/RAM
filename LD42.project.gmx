@@ -8,6 +8,7 @@
     <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_binConverter</sprite>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\spr_certificate</sprite>
     <sprite>sprites\spr_collisionBlock</sprite>
@@ -18,7 +19,8 @@
     <sprite>sprites\spr_robotHole</sprite>
     <sprite>sprites\spr_shipPedestal</sprite>
     <sprite>sprites\spr_shipWindow</sprite>
-    <sprite>sprites\spr_RAMBlock</sprite>
+    <sprite>sprites\spr_RAMBlockEmpty</sprite>
+    <sprite>sprites\spr_RAMBlockFull</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset_Environment</background>
@@ -27,6 +29,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\clear_playerRAM.gml</script>
     <script>scripts\clear_playerStep.gml</script>
     <script>scripts\create_hud.gml</script>
     <script>scripts\get_input.gml</script>
@@ -36,14 +39,20 @@
     <script>scripts\print.gml</script>
     <script>scripts\scr_applyScreenRes.gml</script>
     <script>scripts\scr_initRoom.gml</script>
+    <script>scripts\scr_addRAM.gml</script>
+    <script>scripts\scr_removeRAM.gml</script>
+    <script>scripts\scr_updateRAM.gml</script>
   </scripts>
-  <shaders name="shaders"/>
   <objects name="objects">
+    <object>objects\obj_binConverter</object>
     <object>objects\obj_block</object>
     <object>objects\obj_button</object>
+    <object>objects\obj_cap</object>
     <object>objects\obj_certificate</object>
     <object>objects\obj_control</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_dumbells</object>
+    <object>objects\obj_grease</object>
     <object>objects\obj_hud</object>
     <object>objects\obj_mask</object>
     <object>objects\obj_menuControl</object>
@@ -63,6 +72,13 @@
     <room>rooms\rm_ship_shrine</room>
     <room>rooms\rm_testTrans</room>
   </rooms>
+  <constants number="5">
+    <constant name="RAMBLOCKS_DUMBBELLS">2</constant>
+    <constant name="RAMBLOCKS_BINARY">2</constant>
+    <constant name="RAMBLOCKS_CAP">1</constant>
+    <constant name="RAMBLOCKS_GREASE">2</constant>
+    <constant name="RAMBLOCKS_CERTIFICATE">1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>scr_initRoom();
+  <code>//scr_initRoom();
 
 var starting_xPos = 32;
 var starting_yPos = 0;

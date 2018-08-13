@@ -27,10 +27,20 @@
             <kind>1</kind>
             <string>m_state = player_move;
 
+//game objects
+m_hasCertificate = false;
+m_hasBinConverter = false;
+m_hasDumbells = false;
+m_hasGrease = false;
+m_hasCap = false;
+
+
 //variable member variables
 m_vspd = 0;
 m_hspd = 0;
 m_jumps = 0;
+m_numItems = 0;
+m_numRAMSlots = 3;
 m_canMove = true;
 
 //constant member variables
@@ -39,7 +49,11 @@ m_jumpsMax = 1;
 m_jumpSpeed = 10;
 m_moveSpeed = 4;
 
-//Gamemaker variables
+//Dynamic member variables
+m_itemList = ds_list_create();
+m_RAMMap = undefined;
+
+//GameMaker member variables
 image_speed = 0
 </string>
           </argument>
@@ -66,7 +80,45 @@ image_speed = 0
             <string>clear_playerStep();
 get_input();
 
+if (!m_RAMMap){
+    m_RAMMap = ds_map_create();
+    for(var slot = 0; slot &lt; m_numRAMSlots; slot++){
+        ds_map_add(m_RAMMap, slot, "");
+    }
+}
+
+for (var i = 0; i &lt; ds_map_size(m_RAMMap); i++){
+    if (ds_map_find_value(m_RAMMap, i) != ""){
+        //print(string(i) + ": " + string(m_RAMMap[? i]));
+    }
+}
+
+
+display_set_gui_size(view_wview[0],
+                     view_hview[0]);
+
+//print("x: " + string(view_wview[0]) + ", y: " + string(view_hview[0]));
+                     
 script_execute(m_state);
+
+for (var i = 0; i &lt; ds_list_size(m_itemList); i++){
+    //print(string(i) + ": " + string(object_get_name(obj_player.m_itemList[| i])));
+}
+
+/*for (var i = 0; i &lt; ds_map_size(obj_player.m_RAMMap); i++){
+    if (obj_player.m_RAMMap[? i] != ""){
+        if (obj_player.m_RAMMap[? i])
+            print("Item: " + string(object_get_name(obj_player.m_RAMMap[? i])));
+    }
+    else{
+        print("Item (no item): " + string((obj_player.m_RAMMap[? i])));
+    }
+}*/
+
+
+
+//print(m_hasCertificate);
+//print(m_hasBinConverter);
 </string>
           </argument>
         </arguments>
@@ -89,8 +141,59 @@ script_execute(m_state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_text(100,20,"Yo yo yo ");
-//draw_sprite(spr_RAMBlock, 0, 250, 30);
+            <string>//draw_sprite(spr_RAMBlockEmpty, 0, 8, 8);
+
+var slot = 0;
+var objAtPos = undefined;
+var done = false;
+
+for (var item = 0; item &lt; m_numRAMSlots; item++){
+    //var objAtPos = ds_map_find_value(m_RAMMap, slot);
+    objAtPos = "";
+    if (item &lt; ds_list_size(m_itemList)){
+        objAtPos = m_itemList[| item];
+    }
+    var RAMBarPiece = 0;
+    if (slot == 0){ //first piece
+        RAMBarPiece = 0;
+    }
+    else if (slot == m_numRAMSlots - 1){ //end piece
+        RAMBarPiece = 2;
+        done = true;
+    }
+    else{ //middle piece
+        RAMBarPiece = 1;
+    }
+    if (objAtPos != ""){
+        draw_sprite(spr_RAMBlockFull, RAMBarPiece, (slot * 16) + 8, 8); //draw base Block piece
+        switch(objAtPos){
+            case obj_certificate:
+                draw_sprite_ext(object_get_sprite(obj_certificate), 1, (slot * 16) + 8 + 4, 8  + 4, .25, .25, 1, c_white, 1);
+                for (var block = 1; block &lt; RAMBLOCKS_CERTIFICATE; block++){
+                    slot++;
+                    if (slot == m_numRAMSlots - 1){ RAMBarPiece = 2; done = true;} //end piece
+                    else{ RAMBarPiece = 1; } //middle piece
+                    draw_sprite(spr_RAMBlockFull, RAMBarPiece, (slot * 16) + 8, 8);
+                }
+                break;
+            case obj_binConverter:
+                draw_sprite_ext(object_get_sprite(obj_binConverter), 1, (slot * 16) + 8 + 4, 8 + 4, .25, .25, 1, c_white, 1);
+                for (var block = 1; block &lt; RAMBLOCKS_BINARY; block++){
+                    slot++;
+                    if (slot == m_numRAMSlots - 1){ RAMBarPiece = 2; done = true;} //end piece
+                    else{ RAMBarPiece = 1; } //middle piece
+                    draw_sprite(spr_RAMBlockFull, RAMBarPiece, (slot * 16) + 8, 8);
+                }
+                break;
+        }
+        
+    }
+    else{
+        draw_sprite(spr_RAMBlockEmpty, RAMBarPiece, (slot * 16) + 8, 8); //draw base Block piece
+    }
+    slot++;
+    if (done) item = m_numRAMSlots;
+}
 </string>
           </argument>
         </arguments>
