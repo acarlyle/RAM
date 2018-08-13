@@ -37,7 +37,7 @@ global.key_right = false; //move right
 global.key_up = false; //enter buildings
 global.key_space = false; //jump, interact
 global.key_spaceHeld = false; //for longer jumping
-
+global.key_r = false; //self destruct
 //m_hud = undefined;
 
 scr_applyScreenRes();
