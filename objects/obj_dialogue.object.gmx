@@ -156,9 +156,8 @@ if (m_enableDialogue) {
             <kind>1</kind>
             <string>///render text
 
-draw_sprite_ext(spr_textBox, 0, 8, 64, 4, 4, 1, c_white, 1);
-
 if (m_enableDialogue) {
+    draw_sprite_ext(spr_textBox, 0, 8, 64, 4, 4, 1, c_white, 1);
     draw_set_alpha(alpha);
     if (alpha &lt; 1) alpha += spd/10;
     else alpha = 1;
