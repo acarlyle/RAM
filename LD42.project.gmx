@@ -32,6 +32,12 @@
     <sprite>sprites\spr_autoEntrance</sprite>
     <sprite>sprites\spr_textBox</sprite>
     <sprite>sprites\spr_dialogue</sprite>
+    <sprite>sprites\spr_roboAntenna</sprite>
+    <sprite>sprites\spr_roboMother</sprite>
+    <sprite>sprites\spr_cheezeWiz</sprite>
+    <sprite>sprites\spr_roboGenericMan</sprite>
+    <sprite>sprites\spr_roboGenericFemale</sprite>
+    <sprite>sprites\spr_gasStation</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset_Environment</background>
@@ -39,6 +45,7 @@
     <background>background\TileSet_Spaceship</background>
     <background>background\TileSet_spaceShrine</background>
     <background>background\TileSet_Env_V2</background>
+    <background>background\bkg_crazySpace</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -89,11 +96,13 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>
+    <room>rooms\rm_forest</room>
+    <room>rooms\rm_gasStation</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_ship_shrine</room>
-    <room>rooms\rm_town</room>
     <room>rooms\rm_skyfall</room>
     <room>rooms\rm_testTrans</room>
+    <room>rooms\rm_town</room>
   </rooms>
   <constants number="5">
     <constant name="RAMBLOCKS_DUMBBELLS">2</constant>

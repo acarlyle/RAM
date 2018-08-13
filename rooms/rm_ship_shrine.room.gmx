@@ -144,7 +144,6 @@ player.y = starting_yPos;</code>
     <tile bgName="TileSet_spaceShrine" x="160" y="320" w="32" h="32" xo="96" yo="0" id="10000275" name="inst_E7121E42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="32" y="288" w="32" h="32" xo="96" yo="0" id="10000276" name="inst_2BAB8863" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="384" y="320" w="32" h="32" xo="96" yo="0" id="10000277" name="inst_6E5012F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="416" y="288" w="32" h="32" xo="96" yo="0" id="10000278" name="inst_97E61F4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="320" y="288" w="32" h="32" xo="96" yo="0" id="10000279" name="inst_FFD7E893" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="352" y="224" w="32" h="32" xo="96" yo="0" id="10000280" name="inst_7C320B4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="192" y="288" w="32" h="32" xo="96" yo="0" id="10000281" name="inst_DFF68865" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -152,7 +151,6 @@ player.y = starting_yPos;</code>
     <tile bgName="TileSet_spaceShrine" x="256" y="288" w="32" h="32" xo="128" yo="0" id="10000283" name="inst_975B415F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="160" y="224" w="32" h="32" xo="128" yo="0" id="10000284" name="inst_3F311972" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="256" y="320" w="32" h="32" xo="128" yo="0" id="10000285" name="inst_0375074D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="96" y="320" w="32" h="32" xo="128" yo="0" id="10000286" name="inst_1B4F90BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="32" y="320" w="32" h="32" xo="128" yo="0" id="10000287" name="inst_F260EA37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="128" y="288" w="32" h="32" xo="96" yo="0" id="10000288" name="inst_E64124F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="96" y="224" w="32" h="32" xo="96" yo="0" id="10000289" name="inst_F5C9C275" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -163,15 +161,12 @@ player.y = starting_yPos;</code>
     <tile bgName="TileSet_spaceShrine" x="320" y="256" w="32" h="32" xo="96" yo="0" id="10000294" name="inst_219EEA42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="352" y="256" w="32" h="32" xo="96" yo="0" id="10000295" name="inst_0A04AF26" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="352" y="288" w="32" h="32" xo="96" yo="0" id="10000296" name="inst_97157361" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="288" y="320" w="32" h="32" xo="96" yo="0" id="10000297" name="inst_CCCFC5C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="352" y="320" w="32" h="32" xo="96" yo="0" id="10000298" name="inst_25C86CFD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="416" y="320" w="32" h="32" xo="96" yo="0" id="10000299" name="inst_0290C707" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="64" y="320" w="32" h="32" xo="96" yo="32" id="10000302" name="inst_A8411CD6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="320" y="320" w="32" h="32" xo="96" yo="32" id="10000304" name="inst_A172BC4B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="96" y="320" w="32" h="32" xo="96" yo="32" id="10000302" name="inst_A8411CD6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="288" y="320" w="32" h="32" xo="96" yo="32" id="10000304" name="inst_A172BC4B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="192" y="320" w="32" h="32" xo="96" yo="0" id="10000305" name="inst_6110BAD1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="128" y="224" w="32" h="32" xo="128" yo="32" id="10000306" name="inst_DA769F6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="256" y="224" w="32" h="32" xo="128" yo="32" id="10000307" name="inst_52223A35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="TileSet_spaceShrine" x="384" y="288" w="32" h="32" xo="160" yo="32" id="10000308" name="inst_48FB6320" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="416" y="288" w="32" h="32" xo="160" yo="32" id="10000308" name="inst_48FB6320" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="0" y="224" w="32" h="32" xo="96" yo="0" id="10000355" name="inst_4EDA0ABB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="0" y="192" w="32" h="32" xo="96" yo="0" id="10000356" name="inst_C4D6711E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="64" y="160" w="32" h="32" xo="96" yo="0" id="10000357" name="inst_2E77E71B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -204,6 +199,11 @@ player.y = starting_yPos;</code>
     <tile bgName="TileSet_spaceShrine" x="416" y="256" w="32" h="32" xo="96" yo="0" id="10000594" name="inst_F15DDB3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="416" y="224" w="32" h="32" xo="96" yo="0" id="10000595" name="inst_2ADF3824" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="384" y="224" w="32" h="32" xo="96" yo="0" id="10000596" name="inst_B6F03DB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="384" y="288" w="32" h="32" xo="96" yo="0" id="10000899" name="inst_D8EB8DC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="256" y="224" w="32" h="32" xo="96" yo="0" id="10000900" name="inst_62CA5F3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="128" y="224" w="32" h="32" xo="96" yo="0" id="10000901" name="inst_CDD39552" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="64" y="320" w="32" h="32" xo="96" yo="0" id="10000902" name="inst_F2CD2489" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="TileSet_spaceShrine" x="320" y="320" w="32" h="32" xo="96" yo="0" id="10000903" name="inst_A849AE77" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="0" y="352" w="32" h="32" xo="160" yo="0" id="10000310" name="inst_8CD03506" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="32" y="352" w="32" h="32" xo="160" yo="0" id="10000311" name="inst_7211608E" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="TileSet_spaceShrine" x="64" y="352" w="32" h="32" xo="160" yo="0" id="10000312" name="inst_F67F9FB2" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
