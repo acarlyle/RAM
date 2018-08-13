@@ -29,6 +29,9 @@
     <sprite>sprites\spr_flinger</sprite>
     <sprite>sprites\spr_robo_boy</sprite>
     <sprite>sprites\spr_robo_vaultman</sprite>
+    <sprite>sprites\spr_autoEntrance</sprite>
+    <sprite>sprites\spr_textBox</sprite>
+    <sprite>sprites\spr_dialogue</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Tileset_Environment</background>
@@ -52,7 +55,12 @@
     <script>scripts\scr_addRAM.gml</script>
     <script>scripts\scr_removeRAM.gml</script>
     <script>scripts\scr_updateRAM.gml</script>
+    <script>scripts\draw_wrapped_colored_text.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_binConverter</object>
     <object>objects\obj_bird</object>
@@ -73,9 +81,11 @@
     <object>objects\obj_shipWindow</object>
     <object>objects\par_collisionTile</object>
     <object>objects\par_entrance</object>
+    <object>objects\obj_autoEntrance</object>
     <object>objects\par_interactable</object>
     <object>objects\par_object</object>
     <object>objects\par_RAM</object>
+    <object>objects\obj_dialogue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_base</room>
